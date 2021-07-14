@@ -1,1 +1,0 @@
-https://pososhin.github.io/rsschool-cv/cv
