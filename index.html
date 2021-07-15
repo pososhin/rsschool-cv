@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>CV</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.jpg" alt="logo" width="100">
+        <h1>
+            Dmitrii Pososhin
+        </h1>
+    </header>
+    <main>
+        <ol>
+            <li>
+                <article>
+                    <h2>Contacts:</h2>
+                    <ul>
+                        <li>possoshin@gmail.com</li>
+                        <li>possoshin (telegram)</li>
+                        <li>Iff#5049 (discord)</li>
+                    </ul>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h2>About me</h2>
+                    <p>I like to set interesting goals for myself and achieve them. I always try to learn something new,
+                        but
+                        I
+                        work
+                        in a small organization where I’m the only one IT-specialist. Therefore I really want to get
+                        experience
+                        working with a team of professionals.</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <a
+                        href="https://www.codewars.com/kata/reviews/53e612fe7e5c2caffd0000ef/groups/6060b8a5b240df000101ab79">
+                        <h2>Code
+                            examples</h2>
+                    </a>
+                    <div class="language-javascript highlighter-rouge">
+                        <div class="highlight">
+                            <pre class="highlight"><code><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+       <span class="kd">const</span> <span class="nx">matrix_mult</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">[</span>
+           <span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]],</span>
+           <span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span>
+       <span class="p">];</span>
+       <span class="kd">const</span> <span class="nx">matrix_pow</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">pow</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+           <span class="kd">let</span> <span class="nx">p</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="nx">pow</span><span class="p">)</span> <span class="o">||</span> <span class="mi">0</span><span class="nx">n</span><span class="p">;</span>
+           <span class="kd">let</span> <span class="nx">r</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+           <span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
+           <span class="k">while</span> <span class="p">(</span><span class="nx">p</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+               <span class="k">if</span> <span class="p">(</span><span class="nx">p</span> <span class="o">%</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="nx">r</span> <span class="o">=</span> <span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="p">?</span> <span class="nx">matrix_mult</span><span class="p">(</span><span class="nx">r</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span> <span class="p">:</span> <span class="nx">c</span><span class="p">;</span>
+               <span class="nx">c</span> <span class="o">=</span> <span class="nx">matrix_mult</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span> <span class="nx">c</span><span class="p">);</span>
+               <span class="nx">p</span> <span class="o">=</span> <span class="nx">p</span> <span class="o">/</span> <span class="mi">2</span><span class="nx">n</span><span class="p">;</span>
+           <span class="p">}</span>
+           <span class="k">return</span> <span class="nx">r</span><span class="p">;</span>
+       <span class="p">};</span>
+       <span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="nx">n</span><span class="p">)</span> <span class="p">?</span> <span class="o">-</span><span class="mi">1</span><span class="nx">n</span> <span class="p">:</span> <span class="mi">1</span><span class="nx">n</span><span class="p">);</span>
+       <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="k">return</span> <span class="nx">num</span><span class="p">;</span>   
+       <span class="k">return</span> <span class="nx">matrix_pow</span><span class="p">([[</span><span class="mi">0</span><span class="nx">n</span><span class="p">,</span> <span class="mi">1</span><span class="nx">n</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="nx">n</span><span class="p">,</span> <span class="mi">1</span><span class="nx">n</span><span class="p">]],</span> <span class="nx">num</span><span class="p">)[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+           <span class="o">*</span> <span class="p">((</span><span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="nx">n</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="nx">n</span> <span class="p">:</span> <span class="mi">1</span><span class="nx">n</span><span class="p">);</span>
+      <span class="p">}</span>
+      <span class="p">};</span>
+      </code></pre>
+                        </div>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h2>Experience</h2>
+                    <p>Full-Stack Developer experience over 15 years JS, ES6, Node.js, React, HTTP5, CSS3, REST, JSON,
+                        AJAX,
+                        Websocket, Webpack, Git, Bash, Python, Perl, PostgreSQL, MySQL, MS SQL</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h2>Education</h2>
+                    <p>SPBPU 5th year graduate</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h2>English</h2>
+                    <p>I am working hard on this issue at the moment. I didn’t have any language practice.</p>
+                </article>
+            </li>
+        </ol>
+
+    </main>
+    <footer>
+        <a href="https://rs.school/js/">
+            <img src="https://rs.school/images/rs_school_js.svg" alt="rss-logo" width="100">
+        </a>
+        <!-- <div>2021</div> -->
+        <div class="github-img">
+            <a href="https://github.com/pososhin">
+                <img src="./images/github.png" alt="github" width="200">
+            </a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
