@@ -12,12 +12,12 @@
 <body>
     <header>
         <img src="./images/logo.jpg" alt="logo" width="100">
-        <h1>
-            Dmitrii Pososhin
-        </h1>
     </header>
     <main>
-        <section>
+        <!-- <section> -->
+            <h1>
+                Dmitrii Pososhin
+            </h1>
             <ol>
                 <li>
                     <article>
@@ -51,9 +51,9 @@
                         <div class="language-javascript highlighter-rouge">
                             <div class="highlight">
                                 <pre class="highlight"><code><span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
-       <span class="kd">const</span> <span class="nx">matrix_mult</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">[</span>
-           <span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]],</span>
-           <span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span>
+                                <span class="kd">const</span> <span class="nx">matrix_mult</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">[</span>
+                                <span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]],</span>
+                                <span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span>
        <span class="p">];</span>
        <span class="kd">const</span> <span class="nx">matrix_pow</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">pow</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
            <span class="kd">let</span> <span class="nx">p</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="nx">pow</span><span class="p">)</span> <span class="o">||</span> <span class="mi">0</span><span class="nx">n</span><span class="p">;</span>
@@ -63,16 +63,16 @@
                <span class="k">if</span> <span class="p">(</span><span class="nx">p</span> <span class="o">%</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="nx">r</span> <span class="o">=</span> <span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="p">?</span> <span class="nx">matrix_mult</span><span class="p">(</span><span class="nx">r</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span> <span class="p">:</span> <span class="nx">c</span><span class="p">;</span>
                <span class="nx">c</span> <span class="o">=</span> <span class="nx">matrix_mult</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span> <span class="nx">c</span><span class="p">);</span>
                <span class="nx">p</span> <span class="o">=</span> <span class="nx">p</span> <span class="o">/</span> <span class="mi">2</span><span class="nx">n</span><span class="p">;</span>
-           <span class="p">}</span>
-           <span class="k">return</span> <span class="nx">r</span><span class="p">;</span>
-       <span class="p">};</span>
-       <span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="nx">n</span><span class="p">)</span> <span class="p">?</span> <span class="o">-</span><span class="mi">1</span><span class="nx">n</span> <span class="p">:</span> <span class="mi">1</span><span class="nx">n</span><span class="p">);</span>
-       <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="k">return</span> <span class="nx">num</span><span class="p">;</span>   
-       <span class="k">return</span> <span class="nx">matrix_pow</span><span class="p">([[</span><span class="mi">0</span><span class="nx">n</span><span class="p">,</span> <span class="mi">1</span><span class="nx">n</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="nx">n</span><span class="p">,</span> <span class="mi">1</span><span class="nx">n</span><span class="p">]],</span> <span class="nx">num</span><span class="p">)[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-           <span class="o">*</span> <span class="p">((</span><span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="nx">n</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="nx">n</span> <span class="p">:</span> <span class="mi">1</span><span class="nx">n</span><span class="p">);</span>
+               <span class="p">}</span>
+               <span class="k">return</span> <span class="nx">r</span><span class="p">;</span>
+               <span class="p">};</span>
+               <span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="nx">n</span><span class="p">)</span> <span class="p">?</span> <span class="o">-</span><span class="mi">1</span><span class="nx">n</span> <span class="p">:</span> <span class="mi">1</span><span class="nx">n</span><span class="p">);</span>
+               <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="k">return</span> <span class="nx">num</span><span class="p">;</span>   
+               <span class="k">return</span> <span class="nx">matrix_pow</span><span class="p">([[</span><span class="mi">0</span><span class="nx">n</span><span class="p">,</span> <span class="mi">1</span><span class="nx">n</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="nx">n</span><span class="p">,</span> <span class="mi">1</span><span class="nx">n</span><span class="p">]],</span> <span class="nx">num</span><span class="p">)[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+               <span class="o">*</span> <span class="p">((</span><span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="nx">n</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="nx">n</span> <span class="p">:</span> <span class="mi">1</span><span class="nx">n</span><span class="p">);</span>
       <span class="p">}</span>
       <span class="p">};</span>
-      </code></pre>
+    </code></pre>
                             </div>
                         </div>
                     </article>
@@ -82,7 +82,7 @@
                         <h2>Experience</h2>
                         <ul>
                             <li>
-                                <p>Full-Stack Developer experience over 15 years </p>
+                                <p><mark>Full-Stack Developer</mark> experience over 15 years </p>
                             </li>
                             <li>
                                 <p>JS, ES6, Bash, Python, Perl </p>
@@ -121,7 +121,7 @@
                     </article>
                 </li>
             </ol>
-        </section>
+        <!-- </section> -->
     </main>
     <footer>
         <a href="https://rs.school/js/">
