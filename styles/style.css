@@ -55,7 +55,9 @@
     mark {
         background: none;
     }
-
+    .language-javascript {
+        background: lightgray;
+    }
     @media (min-width: 54em) {
         body {
             width: 822px;
