@@ -1,5 +1,12 @@
     body {
+        display: flex;
         font-size: large;
+        justify-content: center;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 833px;
     }
 
     header img {
@@ -55,12 +62,14 @@
     mark {
         background: none;
     }
+
     .language-javascript {
         background: lightgray;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
     }
-    @media (min-width: 54em) {
-        body {
-            width: 822px;
-            margin-left: calc(50% - 411px);
-        }
+
+    .language-javascript div {
+        /* background: rgba(200, 200, 0, 0.5); */
     }
