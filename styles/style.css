@@ -1,75 +1,251 @@
-    body {
-        display: flex;
-        font-size: large;
-        justify-content: center;
-    }
+:root {
+  --width-content: 1920px;
+  --width-logo: 500px;
+  --logo-top: 180px;
+  --logo-left: 80px;
 
-    .content {
-        width: 100%;
-        max-width: 833px;
-    }
+  --height-menu: 120px;
+  --padding-menu: 50px;
+  --menu-margin-left: 480px;
+  --menu-margin-top: 20px;
+  --menu-width: 200px;
 
-    header img {
-        display: block;
-        position: absolute;
-        margin-top: -22px;
-        margin-left: 44px;
-    }
+  --color-text: #80ff80;
+  --color-background: #000000;
+  --color-background-section: rgba(255, 255, 255, 0.5);
+  --h1-margin-top: 210px;
+  --h1-margin-left: 890px;
 
-    h1 {
-        margin-top: 40px;
-        margin-bottom: 60px;
-        margin-left: 186px;
-    }
+  --section-contacts-margin-top: 110px;
+  --section-contacts-margin-left: 1000px;
+  --section-contacts-padding: 50px;
+  --section-contacts-width: 550px;
 
-    footer {
-        margin-top: 50px;
-        height: 90px;
-        background-color: grey;
-    }
+  --section-aboutme-margin-top: 50px;
+  --section-aboutme-margin-left: 0px;
+  --section-aboutme-padding: 50px;
+  /* --section-aboutme-width:550px; */
+  /* TODO var code */
+  --section-experience-margin-top: 50px;
+  --section-experience-margin-left: 0px;
+  --section-experience-padding: 50px;
+  --section-experience-width: 900px;
 
-    footer img {
-        display: block;
-        position: absolute;
-        margin-top: 28px;
-        margin-left: 44px;
-    }
+  --section-education-margin-top: -700px;
+  --section-education-margin-left: 1020px;
+  --section-education-padding: 50px;
+  --section-education-width: 580px;
 
-    .kd {
-        color: #000000;
-        font-weight: bold;
-    }
+  --section-english-margin-top: 50px;
+  --section-english-margin-left: 1020px;
+  --section-english-padding: 50px;
+  --section-english-width: 670px;
 
-    .k, .kv {
-        color: #000000;
-        font-weight: bold;
-    }
+  --footer-margin-top: 230px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+li {
+  text-decoration: none;
+  display: block;
+  transition: all 0.5s ease;
+}
+a {
+  color: var(--color-text);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+}
+a:hover {
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
 
-    .mi {
-        color: #009999;
-    }
+mark {
+  background: none;
+  color: var(--color-text);
+}
 
-    .github-img {
-        /* display: block; */
-        position: relative;
-    }
+/* * {transition: 2s} */
 
-    .github-img img {
-        right: 10px;
-        margin-top: 20px;
-    }
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-size: 50px;
+  font-family: "Nunito Sans", sans-serif;
+}
 
-    mark {
-        background: none;
-    }
+.back {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  /* overflow: hidden; */
+}
 
-    .language-javascript {
-        background: lightgray;
-        overflow: hidden;
-        overflow-x: scroll;
-        white-space: nowrap;
-    }
+.content {
+  position: absolute;
+  top: 20px;
+  left: calc(50vw - calc(var(--width-content) / 2));
+  width: var(--width-content);
+  height: 100%;
+  /* background: rgba(255, 255, 255, 0.2); */
+  z-index: 100;
+}
 
-    .language-javascript div {
-        /* background: rgba(200, 200, 0, 0.5); */
-    }
+header img {
+  position: absolute;
+  width: var(--width-logo);
+  left: var(--logo-left);
+  top: var(--logo-top);
+}
+
+.section {
+  transition: all 0.5s ease;
+  background: var(--color-background-section);
+  border-radius: 50px;
+}
+.menu {
+  position: absolute;
+  height: var(--height-menu);
+  width: calc(var(--width-content) - calc(var(--width-logo) + 10px));
+  left: var(--menu-margin-left);
+  top: var(--menu-margin-top);
+  /* background: rgba(255,255,255,0.5); */
+  background: var(--color-background-section);
+  text-transform: uppercase;
+  font-size: 33px;
+  border-radius: 50px;
+}
+.menu .menu-list {
+  display: flex;
+  height: 100%;
+  padding-left: var(--padding-menu);
+  padding-right: var(--padding-menu);
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .menu-list a {
+  margin: auto;
+}
+
+h1 {
+  margin-top: var(--h1-margin-top);
+  margin-left: var(--h1-margin-left);
+}
+.section h2 {
+  margin-top: calc(-2.1 * var(--section-contacts-padding));
+}
+.section-contacts {
+  margin-top: var(--section-contacts-margin-top);
+  margin-left: var(--section-contacts-margin-left);
+  /* background: none; */
+  padding: var(--section-contacts-padding);
+  width: var(--section-contacts-width);
+}
+.section-about-me {
+  margin-top: var(--section-aboutme-margin-top);
+  margin-left: var(--section-aboutme-margin-left);
+  /* background: none; */
+  padding: var(--section-aboutme-padding);
+  width: var(--section-aboutme-width);
+}
+/* TODO code */
+.section-code {
+  margin-top: var(--section-code-margin-top);
+  margin-left: var(--section-code-margin-left);
+  /* background: none; */
+  padding: var(--section-code-padding);
+  width: var(--section-code-width);
+}
+
+.section-experience {
+  margin-top: var(--section-experience-margin-top);
+  margin-left: var(--section-experience-margin-left);
+  /* background: none; */
+  padding: var(--section-experience-padding);
+  width: var(--section-experience-width);
+}
+
+.section-education {
+  margin-top: var(--section-education-margin-top);
+  margin-left: var(--section-education-margin-left);
+  /* background: none; */
+  padding: var(--section-education-padding);
+  width: var(--section-education-width);
+}
+
+.section-english {
+  margin-top: var(--section-english-margin-top);
+  margin-left: var(--section-english-margin-left);
+  /* background: none; */
+  padding: var(--section-english-padding);
+  width: var(--section-english-width);
+}
+
+.footer {
+  width: var(--width-content);
+  /* height: 500px; */
+  /* background: var(--color-background-section); */
+  border-radius: 50px;
+  margin-top: var(--footer-margin-top);
+}
+.footer .icon-rs-school {
+  margin-left: 30px ;
+  height: 90px;
+  filter: invert(21%) sepia(91%) saturate(2247%) hue-rotate(99deg)
+    brightness(103%) contrast(103%);
+}
+.footer .icon-rs-school:hover {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
+    brightness(119%) contrast(119%);
+}
+
+.footer .icon-github {
+  height: 90px;
+  filter: invert(21%) sepia(91%) saturate(2247%) hue-rotate(99deg)
+    brightness(103%) contrast(103%);
+}
+.footer .icon-github:hover {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
+    brightness(119%) contrast(119%);
+}
+
+@media screen and (max-width: 1920px) {
+  :root {
+    --width-content: 1024px;
+  }
+  header img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  :root {
+    --width-content: 720px;
+  }
+  header img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 720px) {
+  :root {
+    --width-content: 480px;
+  }
+  header img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  :root {
+    --width-content: 320px;
+  }
+  header img {
+    width: 300px;
+  }
+}
