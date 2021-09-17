@@ -6,9 +6,10 @@ const matrix = () => {
   let font = 10;
   const init = () => {
     W = C.width = window.innerWidth;
-    H = C.height = window.innerHeight-4;
-    font = Math.floor(W/95);
-    arr = Array(Math.floor(W/font+1)).fill(0);
+    H = C.height = window.innerHeight - 4;
+    font = Math.floor(W / 95);
+    font = (font < 10) ? 10 : font;
+    arr = Array(Math.floor(W / font + 1)).fill(0);
   };
   init();
   const CIR = "АБВГДЕЁЖЗИКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЭ";
@@ -19,8 +20,7 @@ const matrix = () => {
     "くの異なる政党を縮小します";
   const ALPHABET = JAPAN + SIM;
 
-  
-//  let col = W / font;
+  //  let col = W / font;
 
   function repaint() {
     $.fillStyle = "rgba(0,0,0,.035)";

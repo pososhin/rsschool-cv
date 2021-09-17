@@ -1,20 +1,24 @@
 :root {
   --width-content: 1920px;
+
+  --font-size: 50px;
+
   --width-logo: 500px;
   --logo-top: 180px;
   --logo-left: 80px;
 
   --height-menu: 120px;
   --padding-menu: 50px;
-  --menu-margin-left: 480px;
+  --menu-margin-left: 300px;
   --menu-margin-top: 20px;
-  --menu-width: 200px;
+  --menu-width: 1600px;
 
   --color-text: #80ff80;
   --color-background: #000000;
   --color-background-section: rgba(255, 255, 255, 0.5);
   --h1-margin-top: 210px;
   --h1-margin-left: 890px;
+  --h2-margin-top: -107px;
 
   --section-contacts-margin-top: 110px;
   --section-contacts-margin-left: 1000px;
@@ -25,7 +29,13 @@
   --section-aboutme-margin-left: 0px;
   --section-aboutme-padding: 50px;
   /* --section-aboutme-width:550px; */
-  /* TODO var code */
+
+  --section-code-margin-top: 50px;
+  --section-code-margin-left: 0px;
+  --section-code-padding: 50px;
+  --section-code-width: 900px;
+  --section-code-font-size: 45px;
+
   --section-experience-margin-top: 50px;
   --section-experience-margin-left: 0px;
   --section-experience-padding: 50px;
@@ -41,7 +51,15 @@
   --section-english-padding: 50px;
   --section-english-width: 670px;
 
-  --footer-margin-top: 230px;
+  --section-project-margin-top: 230px;
+  --section-project-margin-left: 0px;
+  --section-project-padding: 50px;
+  --section-project-width: 670px;
+
+  --section-project-article-width: 420px;
+
+  --footer-margin-top: 50px;
+  --footer-margin-bottom: 50px;
 }
 * {
   margin: 0;
@@ -65,21 +83,16 @@ a:hover {
   font-weight: 700;
   transition: all 0.5s ease;
 }
-
 mark {
   background: none;
   color: var(--color-text);
 }
-
-/* * {transition: 2s} */
-
 body {
   background: var(--color-background);
   color: var(--color-text);
-  font-size: 50px;
+  font-size: var(--font-size);
   font-family: "Nunito Sans", sans-serif;
 }
-
 .back {
   position: fixed;
   height: 100%;
@@ -87,36 +100,31 @@ body {
   z-index: 0;
   /* overflow: hidden; */
 }
-
 .content {
   position: absolute;
   top: 20px;
   left: calc(50vw - calc(var(--width-content) / 2));
   width: var(--width-content);
-  height: 100%;
-  /* background: rgba(255, 255, 255, 0.2); */
+  height: 300%;
   z-index: 100;
 }
-
-header img {
+.header-logo {
   position: absolute;
   width: var(--width-logo);
   left: var(--logo-left);
   top: var(--logo-top);
 }
-
 .section {
   transition: all 0.5s ease;
   background: var(--color-background-section);
-  border-radius: 50px;
+  border-radius: var(--section-aboutme-padding);
 }
 .menu {
   position: absolute;
   height: var(--height-menu);
-  width: calc(var(--width-content) - calc(var(--width-logo) + 10px));
+  width: var(--menu-width);
   left: var(--menu-margin-left);
   top: var(--menu-margin-top);
-  /* background: rgba(255,255,255,0.5); */
   background: var(--color-background-section);
   text-transform: uppercase;
   font-size: 33px;
@@ -134,41 +142,56 @@ header img {
 .menu .menu-list a {
   margin: auto;
 }
+.menu-burger {
+  display: block;
+  position: absolute;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+.menu-icon-burger {
+  display: none;
+  height: 100%;
+  width: 100%;
+  filter: invert(75%) sepia(15%) saturate(4195%) hue-rotate(65deg) brightness(89%) contrast(73%);
+  transition: all 0.5s ease;
+}
 
+.menu-icon-burger:hover {
+  filter: invert(81%) sepia(90%) saturate(330%) hue-rotate(52deg) brightness(101%) contrast(101%);
+}
 h1 {
   margin-top: var(--h1-margin-top);
   margin-left: var(--h1-margin-left);
 }
 .section h2 {
-  margin-top: calc(-2.1 * var(--section-contacts-padding));
+  margin-top: var(--h2-margin-top);
 }
 .section-contacts {
   margin-top: var(--section-contacts-margin-top);
   margin-left: var(--section-contacts-margin-left);
-  /* background: none; */
   padding: var(--section-contacts-padding);
   width: var(--section-contacts-width);
 }
 .section-about-me {
   margin-top: var(--section-aboutme-margin-top);
   margin-left: var(--section-aboutme-margin-left);
-  /* background: none; */
   padding: var(--section-aboutme-padding);
   width: var(--section-aboutme-width);
 }
-/* TODO code */
 .section-code {
   margin-top: var(--section-code-margin-top);
   margin-left: var(--section-code-margin-left);
-  /* background: none; */
   padding: var(--section-code-padding);
-  width: var(--section-code-width);
 }
-
+.section-code pre code {
+  font-size: var(--section-code-font-size);
+  border-radius: 20px;
+}
 .section-experience {
   margin-top: var(--section-experience-margin-top);
   margin-left: var(--section-experience-margin-left);
-  /* background: none; */
   padding: var(--section-experience-padding);
   width: var(--section-experience-width);
 }
@@ -176,7 +199,6 @@ h1 {
 .section-education {
   margin-top: var(--section-education-margin-top);
   margin-left: var(--section-education-margin-left);
-  /* background: none; */
   padding: var(--section-education-padding);
   width: var(--section-education-width);
 }
@@ -184,20 +206,39 @@ h1 {
 .section-english {
   margin-top: var(--section-english-margin-top);
   margin-left: var(--section-english-margin-left);
-  /* background: none; */
   padding: var(--section-english-padding);
   width: var(--section-english-width);
 }
 
+.section-projects {
+  margin-top: var(--section-project-margin-top);
+  margin-left: var(--section-project-margin-left);
+  padding: var(--section-project-padding);
+}
+.section-projects div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-projects li {
+  font-size: calc(var(--font-size) / 2);
+}
+
+.section-projects .article {
+  width: var(--section-project-article-width);
+}
+.section-projects .article img {
+  width: 100%;
+}
+
 .footer {
   width: var(--width-content);
-  /* height: 500px; */
-  /* background: var(--color-background-section); */
   border-radius: 50px;
   margin-top: var(--footer-margin-top);
+  padding-bottom: var(--footer-margin-bottom);
 }
 .footer .icon-rs-school {
-  margin-left: 30px ;
+  margin-left: 30px;
   height: 90px;
   filter: invert(21%) sepia(91%) saturate(2247%) hue-rotate(99deg)
     brightness(103%) contrast(103%);
@@ -217,35 +258,337 @@ h1 {
     brightness(119%) contrast(119%);
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1988px) {
   :root {
     --width-content: 1024px;
+    --font-size: 30px;
+
+    --width-logo: 300px;
+    --logo-top: 20px;
+    --logo-left: 0px;
+
+    --height-menu: 400px;
+    /* --padding-menu: 50px; */
+    --menu-margin-left: 0px;
+    --menu-margin-top: 0px;
+    --menu-width: 250px;
+
+    /* --color-text: #80ff80; */
+    /* --color-background: #000000; */
+    /* --color-background-section: rgba(255, 255, 255, 0.5); */
+    --h1-margin-top: 110px;
+    --h1-margin-left: 340px;
+    --h2-margin-top: -74px;
+
+    --section-contacts-margin-top: 40px;
+    --section-contacts-margin-left: 620px;
+    --section-contacts-padding: 40px;
+    --section-contacts-width: 300px;
+
+    /* --section-aboutme-margin-top: 50px; */
+    /* --section-aboutme-margin-left: 0px; */
+    --section-aboutme-padding: 40px;
+    /* --section-aboutme-width:550px; */
+
+    /* --section-code-margin-top: 50px; */
+    /* --section-code-margin-left: 0px; */
+    --section-code-padding: 40px;
+    /* --section-code-width: 900px; */
+    --section-code-font-size: 25px;
+
+    /* --section-experience-margin-top: 50px; */
+    /* --section-experience-margin-left: 0px; */
+    --section-experience-padding: 40px;
+    --section-experience-width: 944px;
+
+    --section-education-margin-top: 50px;
+    --section-education-margin-left: 0px;
+    --section-education-padding: 40px;
+    --section-education-width: 670px;
+
+    /* --section-english-margin-top: 50px; */
+    --section-english-margin-left: 0px;
+    --section-english-padding: 40px;
+    /* --section-english-width: 670px; */
+
+    --section-project-margin-top: 50px;
+    /* --section-project-margin-left: 0px; */
+    --section-project-padding: 40px;
+    /* --section-project-width: 670px; */
+
+    /* --section-project-article-width: 420px; */
+
+    /* --footer-margin-top: 50px; */
+    /* --footer-margin-bottom: 50px; */
   }
-  header img {
-    width: 300px;
+  .menu {
+    /* background: none; */
+    /* display: none; */
+    margin-top: unset;
+    margin-left: unset;
+    border-radius: 20px;
+    background: rgba(0, 29 , 0 ,0.7);
+    position: absolute;
+    right: 20px;
+    left: unset;
+    font-size: 24px;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s ease;
+  }
+  .menu .menu-list {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon-burger {
+    display: block;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1090px) {
   :root {
     --width-content: 720px;
+    --font-size: 30px;
+    --width-logo: 200px;
+    /* --logo-top: 180px; */
+    /* --logo-left: 80px; */
+
+    /* --height-menu: 120px; */
+    /* --padding-menu: 50px; */
+    /* --menu-margin-left: 620px;
+    --menu-margin-top: 0px; */
+    /* --menu-width: 200px; */
+
+    /* --color-text: #80ff80; */
+    /* --color-background: #000000; */
+    /* --color-background-section: rgba(255, 255, 255, 0.5); */
+    --h1-margin-top: 70px;
+    --h1-margin-left: 240px;
+    /* --h2-margin-top: -107px */
+
+    /* --section-contacts-margin-top: 110px; */
+    --section-contacts-margin-left: 290px;
+    /* --section-contacts-padding: 50px; */
+    /* --section-contacts-width: 550px; */
+
+    /* --section-aboutme-margin-top: 50px; */
+    /* --section-aboutme-margin-left: 0px; */
+    /* --section-aboutme-padding: 50px; */
+    /* --section-aboutme-width:550px; */
+
+    /* --section-code-margin-top: 50px; */
+    /* --section-code-margin-left: 0px; */
+    /* --section-code-padding: 50px; */
+    /* --section-code-width: 900px; */
+    --section-code-font-size: 18px;
+
+    /* --section-experience-margin-top: 50px; */
+    /* --section-experience-margin-left: 0px; */
+    /* --section-experience-padding: 50px; */
+    --section-experience-width: 640px;
+
+    /* --section-education-margin-top: -700px; */
+    /* --section-education-margin-left: 1020px; */
+    /* --section-education-padding: 50px; */
+    --section-education-width: 640px;
+
+    /* --section-english-margin-top: 50px; */
+    /* --section-english-margin-left: 1020px; */
+    /* --section-english-padding: 50px; */
+    --section-english-width: 640px;
+
+    /* --section-project-margin-top: 230px; */
+    /* --section-project-margin-left: 0px; */
+    /* --section-project-padding: 50px; */
+    /* --section-project-width: 670px; */
+
+    /* --section-project-article-width: 420px; */
+
+    /* --footer-margin-top: 50px; */
+    /* --footer-margin-bottom: 50px; */
   }
-  header img {
-    width: 300px;
+  .section-projects div {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 765px) {
   :root {
     --width-content: 480px;
+    --font-size: 22px;
+    --width-logo: 300px;
+    --logo-top: 0px;
+    --logo-left: 0px;
+
+    /* --height-menu: 120px; */
+    /* --padding-menu: 50px; */
+    /* --menu-margin-left: 360px;
+    --menu-margin-top: 0px; */
+    /* --menu-width: 200px; */
+
+    /* --color-text: #80ff80; */
+    /* --color-background: #000000; */
+    /* --color-background-section: rgba(255, 255, 255, 0.5); */
+    --h1-margin-top: 310px;
+    --h1-margin-left: 70px;
+    --h2-margin-top: -55px;
+
+    /* --section-contacts-margin-top: 110px; */
+    --section-contacts-margin-left: 210px;
+    --section-contacts-padding: 30px;
+    --section-contacts-width: 210px;
+
+    /* --section-aboutme-margin-top: 50px; */
+    /* --section-aboutme-margin-left: 0px; */
+    --section-aboutme-padding: 30px;
+    /* --section-aboutme-width:550px; */
+
+    /* --section-code-margin-top: 50px; */
+    /* --section-code-margin-left: 0px; */
+    --section-code-padding: 30px;
+    /* --section-code-width: 900px; */
+    --section-code-font-size: 14px;
+
+    /* --section-experience-margin-top: 50px; */
+    /* --section-experience-margin-left: 0px; */
+    --section-experience-padding: 30px;
+    --section-experience-width: 420px;
+
+    /* --section-education-margin-top: -700px; */
+    /* --section-education-margin-left: 1020px; */
+    --section-education-padding: 30px;
+    --section-education-width: 420px;
+
+    /* --section-english-margin-top: 50px; */
+    /* --section-english-margin-left: 1020px; */
+    --section-english-padding: 30px;
+    --section-english-width: 420px;
+
+    /* --section-project-margin-top: 230px; */
+    /* --section-project-margin-left: 0px; */
+    --section-project-padding: 30px;
+    --section-project-width: 420px;
+
+    /* --section-project-article-width: 420px; */
+
+    /* --footer-margin-top: 50px; */
+    /* --footer-margin-bottom: 50px; */
   }
-  header img {
-    width: 300px;
+  .footer-txt {
+    display: none;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   :root {
-    --width-content: 320px;
+    /* --width-content: 310px; */
+    --width-content: calc(100vw - 35px);
+    --font-size: 18px;
+    --width-logo: 240px;
+    /* --logo-top: 180px; */
+    /* --logo-left: 80px; */
+
+    /* --height-menu: 100px; */
+    /* --padding-menu: 50px; */
+    /* --menu-margin-left: 220px; */
+    /* --menu-margin-top: 0px; */
+    /* --menu-width: 100px; */
+
+    /* --color-text: #80ff80; */
+    /* --color-background: #000000; */
+    /* --color-background-section: rgba(255, 255, 255, 0.5); */
+    /* --h1-margin-top: 210px; */
+    /* --h1-margin-left: 890px; */
+    --h2-margin-top: -40px;
+
+    /* --section-contacts-margin-top: 110px; */
+    /* --section-contacts-margin-left: 1000px; */
+    /* --section-contacts-padding: 50px; */
+    /* --section-contacts-width: 550px; */
+
+    /* --section-aboutme-margin-top: 50px; */
+    /* --section-aboutme-margin-left: 0px; */
+    /* --section-aboutme-padding: 50px; */
+    /* --section-aboutme-width:550px; */
+
+    /* --section-code-margin-top: 50px; */
+    /* --section-code-margin-left: 0px; */
+    /* --section-code-padding: 50px; */
+    /* --section-code-width: 900px; */
+    --section-code-font-size: 10px;
+
+    /* --section-experience-margin-top: 50px; */
+    /* --section-experience-margin-left: 0px; */
+    /* --section-experience-padding: 50px; */
+    /* --section-experience-width: 900px; */
+
+    /* --section-education-margin-top: -700px; */
+    /* --section-education-margin-left: 1020px; */
+    /* --section-education-padding: 50px; */
+    /* --section-education-width: 580px; */
+
+    /* --section-english-margin-top: 50px; */
+    /* --section-english-margin-left: 1020px; */
+    /* --section-english-padding: 50px; */
+    /* --section-english-width: 670px; */
+
+    /* --section-project-margin-top: 230px; */
+    /* --section-project-margin-left: 0px; */
+    /* --section-project-padding: 50px; */
+    /* --section-project-width: 670px; */
+
+    /* --section-project-article-width: 420px; */
+
+    /* --footer-margin-top: 50px; */
+    /* --footer-margin-bottom: 50px; */
   }
-  header img {
-    width: 300px;
+  h1 {
+    margin-left: 0;
+    margin-top: 260px;
+    width: 100%;
+    text-align: center;
+  }
+  /* .content { */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* margin-left: 0; */
+    /* width: 210px; */
+  /* } */
+  .section {
+    margin-top: 50px;
+    /* max-width: calc(100vw - 90px); */
+    /* width: calc(85vw - 5px); */
+    margin-left: unset; 
+    width: calc(100vw - 76px);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .section-contacts {
+    margin-left: unset;
+    /* width: 100%; */
+  }
+  .section-code{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: calc(100vw - 40px);
+    
+  }
+  .section-projects .article {
+    width: 100%;  
+  }
+  /* .menu{ */
+    /* left: unset; */
+    /* right: 20px; */
+  /* } */
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .icon-rs-school{
+    margin-top: 20px;
+    margin-left: 0px;
   }
 }
