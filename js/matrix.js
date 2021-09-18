@@ -32,8 +32,8 @@ const matrix = () => {
         if (Math.random() > 0.975) arr[i] = 1;
         else continue;
       }
-      let txt = ALPHABET[Math.floor(Math.random() * ALPHABET.length)];
-      $.fillText(txt, i * font, arr[i] * font);
+      let char = ALPHABET[Math.floor(Math.random() * ALPHABET.length)];
+      $.fillText(char, i * font, arr[i] * font);
       arr[i]++;
       if (arr[i] * font > H) arr[i] = 0;
     }

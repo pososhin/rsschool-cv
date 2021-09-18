@@ -25,6 +25,7 @@
 
     <script src="./js/matrix.js"></script>
     <script src="./js/burger-menu.js"></script>
+    <script src="./js/information.js"></script>
 
     <title>cv</title>
   </head>
@@ -44,25 +45,31 @@
               <li><a href="#experience">Experience</a></li>
               <li><a href="#education">Education</a></li>
               <li><a href="#english">English</a></li>
+              <li><a href="#projects">Projects</a></li>
             </il>
           </div>
-          <div  class="menu-burger">
-            <img id="burger-icon" class="menu-icon-burger"  src="./icon/burger.svg"  alt="burger" />
+          <div class="menu-burger">
+            <img
+              id="burger-icon"
+              class="menu-icon-burger"
+              src="./icon/burger.svg"
+              alt="burger"
+            />
           </div>
         </nav>
       </header>
       <main>
         <h1>Dmitrii Pososhin</h1>
-        <section id="contacts" class="section section-contacts">
-          <h2>Contacts:</h2>
+        <section class="section section-contacts">
+          <h2  id="contacts">Contacts:</h2>
           <ul>
             <li>possoshin@gmail.com</li>
             <li>possoshin (telegram)</li>
             <li>Iff#5049 (discord)</li>
           </ul>
         </section>
-        <section id="about-me" class="section section-about-me">
-          <h2>About me</h2>
+        <section class="section section-about-me">
+          <h2  id="about-me">About me</h2>
           <p>
             I like to set interesting goals for myself and achieve them. I
             always try to learn something new, but I work in a small
@@ -70,8 +77,8 @@
             really want to get experience working with a team of professionals.
           </p>
         </section>
-        <section id="code" class="section section-code">
-          <h2>Code Example</h2>
+        <section class="section section-code">
+          <h2  id="code">Code Example</h2>
           <pre><code class="javascript">
   const matrix = () => {
     const C = document.querySelector("canvas");
@@ -115,8 +122,8 @@
   };          
         </code></pre>
         </section>
-        <section id="experience" class="section section-experience">
-          <h2>Experience</h2>
+        <section class="section section-experience">
+          <h2  id="experience">Experience</h2>
           <ul>
             <li>
               <p><mark>Full-Stack Developer</mark> experience over 15 years</p>
@@ -144,19 +151,19 @@
             </li>
           </ul>
         </section>
-        <section id="education" class="section section-education">
-          <h2>Education</h2>
+        <section class="section section-education">
+          <h2  id="education">Education</h2>
           <p>SPBPU 5th year graduate</p>
         </section>
-        <section id="english" class="section section-english">
-          <h2>English</h2>
+        <section class="section section-english">
+          <h2 id="english" >English</h2>
           <p>
             I am working hard on this issue at the moment. I didn’t have any
             language practice.
           </p>
         </section>
-        <section id="projects" class="section section-projects">
-          <h2>Projects</h2>
+        <section class="section section-projects">
+          <h2  id="projects">Projects</h2>
           <div>
             <a
               href="https://rolling-scopes-school.github.io/pososhin-JSFEPRESCHOOL/museum/"
@@ -165,12 +172,16 @@
             >
               <article class="article article-museum">
                 <h3>Museum</h3>
-                <img src="./images/museum-prev-min.jpg" alt="museum preview" />
-                <il>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Figma</li>
-                </il>
+                <figure>
+                  <img
+                    src="./images/museum-prev-min.jpg"
+                    alt="museum preview"
+                  />
+                  <figcaption>
+                    <h4>RS school task</h4>
+                    <p>HTML5, CSS3, Figma</p>
+                  </figcaption>
+                </figure>
               </article>
             </a>
             <a
@@ -180,12 +191,19 @@
             >
               <article class="article article-museum">
                 <h3>Slider</h3>
-                <img src="./images/slider-prev-min.jpg" alt="slider preview" />
-                <il>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Figma</li>
-                </il>
+                <figure>
+                  <img
+                    src="./images/slider-prev-min.jpg"
+                    alt="slider preview"
+                  />
+                  <figcaption>
+                    <il>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>Figma</li>
+                    </il>
+                  </figcaption>
+                </figure>
               </article>
             </a>
             <a
@@ -195,12 +213,19 @@
             >
               <article class="article article-museum">
                 <h3>Player</h3>
-                <img src="./images/player-prev-min.jpg" alt="player preview" />
-                <il>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Figma</li>
-                </il>
+                <figure>
+                  <img
+                    src="./images/player-prev-min.jpg"
+                    alt="player preview"
+                  />
+                  <figcaption>
+                    <il>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>Figma</li>
+                    </il>
+                  </figcaption>
+                </figure>
               </article>
             </a>
             <a
@@ -210,12 +235,16 @@
             >
               <article class="article article-museum">
                 <h3>Clock</h3>
-                <img src="./images/clock-prev-min.jpg" alt="clock preview" />
-                <il>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Figma</li>
-                </il>
+                <figure>
+                  <img src="./images/clock-prev-min.jpg" alt="clock preview" />
+                  <figcaption>
+                    <il>
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>Figma</li>
+                    </il>
+                  </figcaption>
+                </figure>
               </article>
             </a>
           </div>
@@ -257,6 +286,7 @@
     window.onload = () => {
       matrix();
       burger();
+      information();
     };
   </script>
 </html>
