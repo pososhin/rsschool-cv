@@ -226,6 +226,7 @@ h1 {
 
 .section-projects .article {
   width: var(--section-project-article-width);
+  margin-bottom: 25px;
 }
 .section-projects .article img {
   width: 100%;

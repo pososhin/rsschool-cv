@@ -19,7 +19,6 @@ const burger = () => {
     else hide();
   };
   const resize = () => {
-    console.log(window.innerWidth, menu.classList.contains("menu-on"));
     if (window.innerWidth >= MAXWIDTH) show();
     else {
         if(menu.classList.contains("menu-on")) show();

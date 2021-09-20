@@ -12,7 +12,7 @@ const information = () => {
     "2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок h1-h6, но не больше 20 баллов"
   );
   console.log(
-    "Присутствуют article, figure, figcaption, footer, header, main, nav, section, h1 (один раз) ,h2 ,h3"
+    "Присутствуют article, figure, figcaption, footer, header, main, nav, section, h1 (один раз) ,h2 ,h3, h4"
   );
   console.log("");
   console.log("для оформления СV используются css-стили +10");
