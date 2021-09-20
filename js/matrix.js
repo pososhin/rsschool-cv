@@ -19,9 +19,6 @@ const matrix = () => {
     "どことか多くの異なる象形文字多" +
     "くの異なる政党を縮小します";
   const ALPHABET = JAPAN + SIM;
-
-  //  let col = W / font;
-
   function repaint() {
     $.fillStyle = "rgba(0,0,0,.035)";
     $.fillRect(0, 0, W, H);
