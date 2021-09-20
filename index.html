@@ -1,143 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>CV</title>
-</head>
-
-<body>
-    <div class="content">
-        <header>
-            <img src="./images/logo.jpg" alt="logo" width="100">
-        </header>
-        <main>
-            <!-- <section> -->
-            <h1>
-                Dmitrii Pososhin
-            </h1>
-            <ol>
-                <li>
-                    <article>
-                        <h2>Contacts:</h2>
-                        <ul>
-                            <li>possoshin@gmail.com</li>
-                            <li>possoshin (telegram)</li>
-                            <li>Iff#5049 (discord)</li>
-                        </ul>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h2>About me</h2>
-                        <p>I like to set interesting goals for myself and achieve them. I always try to learn something
-                            new,
-                            but
-                            I
-                            work
-                            in a small organization where I’m the only one IT-specialist. Therefore I really want to get
-                            experience
-                            working with a team of professionals.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <a
-                            href="https://www.codewars.com/kata/reviews/53e612fe7e5c2caffd0000ef/groups/6060b8a5b240df000101ab79">
-                            <h2>Code examples</h2>
-                        </a>
-                        <div class="language-javascript">
-                            <div>
-                                <pre><code>
-  <span class="kd">function</span> <span class="nx">fib</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kd">const</span> <span class="nx">matrix_mult</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">[</span>
-          <span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]],</span>
-          <span class="p">[</span><span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nx">b</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span>
-      <span class="p">];</span>
-      <span class="kd">const</span> <span class="nx">matrix_pow</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">pow</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-          <span class="kd">let</span> <span class="nx">p</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="nx">pow</span><span class="p">)</span> <span class="o">||</span> <span class="mi">0</span><span class="nx">n</span><span class="p">;</span>
-          <span class="kd">let</span> <span class="nx">r</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
-          <span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="nx">a</span><span class="p">;</span>
-          <span class="k">while</span> <span class="p">(</span><span class="nx">p</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-              <span class="k">if</span> <span class="p">(</span><span class="nx">p</span> <span class="o">%</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="nx">r</span> <span class="o">=</span> <span class="p">(</span><span class="nx">r</span><span class="p">)</span> <span class="p">?</span> <span class="nx">matrix_mult</span><span class="p">(</span><span class="nx">r</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span> <span class="p">:</span> <span class="nx">c</span><span class="p">;</span>
-              <span class="nx">c</span> <span class="o">=</span> <span class="nx">matrix_mult</span><span class="p">(</span><span class="nx">c</span><span class="p">,</span> <span class="nx">c</span><span class="p">);</span>
-              <span class="nx">p</span> <span class="o">=</span> <span class="nx">p</span> <span class="o">/</span> <span class="mi">2</span><span class="nx">n</span><span class="p">;</span>
-          <span class="p">}</span>
-          <span class="k">return</span> <span class="nx">r</span><span class="p">;</span>
-      <span class="p">};</span>
-      <span class="kd">let</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="nx">n</span><span class="p">)</span> <span class="p">?</span> <span class="o">-</span><span class="mi">1</span><span class="nx">n</span> <span class="p">:</span> <span class="mi">1</span><span class="nx">n</span><span class="p">);</span>
-      <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="k">return</span> <span class="nx">num</span><span class="p">;</span>   
-      <span class="k">return</span> <span class="nx">matrix_pow</span><span class="p">([[</span><span class="mi">0</span><span class="nx">n</span><span class="p">,</span> <span class="mi">1</span><span class="nx">n</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="nx">n</span><span class="p">,</span> <span class="mi">1</span><span class="nx">n</span><span class="p">]],</span> <span class="nx">num</span><span class="p">)[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-          <span class="o">*</span> <span class="p">((</span><span class="nx">BigInt</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="nx">n</span><span class="p">)</span> <span class="p">?</span> <span class="p">(</span><span class="nx">num</span> <span class="o">%</span> <span class="mi">2</span><span class="nx">n</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="nx">n</span> <span class="p">:</span> <span class="mi">1</span><span class="nx">n</span><span class="p">);</span>
-  <span class="p">}</span>    
-    </code></pre>
-                            </div>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h2>Experience</h2>
-                        <ul>
-                            <li>
-                                <p><mark>Full-Stack Developer</mark> experience over 15 years </p>
-                            </li>
-                            <li>
-                                <p>JS, ES6, Bash, Python, Perl </p>
-                            </li>
-                            <li>
-                                <p>HTTP5, CSS3</p>
-                            </li>
-                            <li>
-                                <p>Node.js, React</p>
-                            </li>
-                            <li>
-                                <p>REST, JSON, AJAX, Websocket </p>
-                            </li>
-                            <li>
-                                <p>Webpack, Git </p>
-                            </li>
-                            <li>
-                                <p>PostgreSQL, MySQL, MS SQL</p>
-                            </li>
-                            <li>
-                                <p>etc.</p>
-                            </li>
-                        </ul>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h2>Education</h2>
-                        <p>SPBPU 5th year graduate</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h2>English</h2>
-                        <p>I am working hard on this issue at the moment. I didn’t have any language practice.</p>
-                    </article>
-                </li>
-            </ol>
-            <!-- </section> -->
-        </main>
-        <footer>
-            <nav>
-                <a href="https://rs.school/js/">
-                    <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool logo" width="100">
-                </a>
-                <!-- <div>2021</div> -->
-                <div class="github-img">
-                    <a href="https://github.com/pososhin">
-                        <img src="./images/github.png" alt="github" width="200">
-                    </a>
-                </div>
-            </nav>
-        </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./js/matrix.js"></script>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/information.js"></script>
+    <title>cv</title>
+  </head>
+  <body>
+    <div class="back">
+      <canvas></canvas>
     </div>
-</body>
-
+    <div class="content">
+      <header>
+        <img class="header-logo" src="./images/logo.png" alt="logo" />
+        <nav>
+          <div id="menu" class="menu">
+            <il class="menu-list">
+              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#about-me">About me</a></li>
+              <li><a href="#code">Code examples</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#english">English</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </il>
+          </div>
+          <div class="menu-burger">
+            <img
+              id="burger-icon"
+              class="menu-icon-burger"
+              src="./icon/burger.svg"
+              alt="burger"
+            />
+          </div>
+        </nav>
+      </header>
+      <main>
+        <h1>Dmitrii Pososhin</h1>
+        <section class="section section-contacts">
+          <h2  id="contacts">Contacts:</h2>
+          <ul>
+            <li>possoshin@gmail.com</li>
+            <li>possoshin (telegram)</li>
+            <li>Iff#5049 (discord)</li>
+          </ul>
+        </section>
+        <section class="section section-about-me">
+          <h2  id="about-me">About me</h2>
+          <p>
+            I like to set interesting goals for myself and achieve them. I
+            always try to learn something new, but I work in a small
+            organization where I’m the only one IT-specialist. Therefore I
+            really want to get experience working with a team of professionals.
+          </p>
+        </section>
+        <section class="section section-code">
+          <h2  id="code">Code Example</h2>
+          <pre><code class="javascript">
+  const matrix = () => {
+    const C = document.querySelector("canvas");
+    const $ = C.getContext("2d");
+    let W, H;
+    let arr = [];
+    let font = 10;
+    const init = () => {
+      W = C.width = window.innerWidth;
+      H = C.height = window.innerHeight-4;
+      font = Math.floor(W/95);
+      arr = Array(Math.floor(W/font+1)).fill(0);
+    };
+    init();
+    const SIM = "1234567890            ";
+    const JAPAN =
+      "ックブ司レシピがいるのはどれほ" +
+      "どことか多くの異なる象形文字多" +
+      "くの異なる政党を縮小します";
+    const ALPHABET = JAPAN + SIM;
+    function repaint() {
+      $.fillStyle = "rgba(0,0,0,.035)";
+      $.fillRect(0, 0, W, H);
+      $.fillStyle = "#00b800";
+      $.font = font + "px system-ui";
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == 0) {
+          if (Math.random() > 0.975) arr[i] = 1;
+          else continue;
+        }
+        let txt = ALPHABET[Math.floor(
+                Math.random()* ALPHABET.length)];
+        $.fillText(txt, i * font, arr[i] * font);
+        arr[i]++;
+        if (arr[i] * font > H) arr[i] = 0;
+      }
+    }
+    setInterval(repaint, 77);
+    window.addEventListener("resize",
+                              () => init());
+  };          
+        </code></pre>
+        </section>
+        <section class="section section-experience">
+          <h2  id="experience">Experience</h2>
+          <ul>
+            <li>
+              <p><mark>Full-Stack Developer</mark> experience over 15 years</p>
+            </li>
+            <li>
+              <p>JS, ES6, Bash, Python, Perl</p>
+            </li>
+            <li>
+              <p>HTTP5, CSS3</p>
+            </li>
+            <li>
+              <p>Node.js, React</p>
+            </li>
+            <li>
+              <p>REST, JSON, AJAX, Websocket</p>
+            </li>
+            <li>
+              <p>Webpack, Git</p>
+            </li>
+            <li>
+              <p>PostgreSQL, MySQL, MS SQL</p>
+            </li>
+            <li>
+              <p>etc.</p>
+            </li>
+          </ul>
+        </section>
+        <section class="section section-education">
+          <h2  id="education">Education</h2>
+          <p>SPBPU 5th year graduate</p>
+        </section>
+        <section class="section section-english">
+          <h2 id="english" >English</h2>
+          <p>
+            I am working hard on this issue at the moment. I didn’t have any
+            language practice.
+          </p>
+        </section>
+        <section class="section section-projects">
+          <h2  id="projects">Projects</h2>
+          <div>
+            <a
+              href="https://rolling-scopes-school.github.io/pososhin-JSFEPRESCHOOL/museum/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="article article-museum">
+                <h3>Museum</h3>
+                <figure>
+                  <img
+                    src="./images/museum-prev-min.jpg"
+                    alt="museum preview"
+                  />
+                  <figcaption>
+                    <h4>RS school task</h4>
+                    <p>HTML5, CSS3, Figma</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </a>
+            <a
+              href="https://rolling-scopes-school.github.io/pososhin-JSFEPRESCHOOL/vslider/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="article article-museum">
+                <h3>Slider</h3>
+                <figure>
+                  <img
+                    src="./images/slider-prev-min.jpg"
+                    alt="slider preview"
+                  />
+                  <figcaption>
+                    <h4>RS school task</h4>
+                    <p>HTML5, CSS3, JS</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </a>
+            <a
+              href="https://rolling-scopes-school.github.io/pososhin-JSFEPRESCHOOL/custom-video-player/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="article article-museum">
+                <h3>Player</h3>
+                <figure>
+                  <img
+                    src="./images/player-prev-min.jpg"
+                    alt="player preview"
+                  />
+                  <figcaption>
+                    <h4>RS school task</h4>
+                    <p>HTML5, CSS3, JS</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </a>
+            <a
+              href="https://rolling-scopes-school.github.io/pososhin-JSFEPRESCHOOL/s0clock/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="article article-museum">
+                <h3>Clock</h3>
+                <figure>
+                  <img src="./images/clock-prev-min.jpg" alt="clock preview" />
+                  <figcaption>
+                    <h4>RS school task</h4>
+                    <p>HTML5, CSS3 (animation), JS</p>
+                  </figcaption>
+                </figure>
+              </article>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <a
+            href="https://github.com/pososhin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="icon-github"
+              viewBox="64 64 896 896"
+              focusable="false"
+              data-icon="github"
+              aria-hidden="true"
+            >
+              <path
+                d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+              ></path>
+            </svg>
+          </a>
+          <span class="footer-txt">@pososhin</span>
+          <a
+            href="https://rs.school/js/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="icon-rs-school" src="./icon/rs_school_js.svg" alt="" />
+          </a>
+          <span class="footer-txt">2021</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    window.onload = () => {
+      matrix();
+      burger();
+      information();
+    };
+  </script>
 </html>
